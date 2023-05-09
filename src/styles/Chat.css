@@ -1,0 +1,83 @@
+.chat{
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    column-gap: 30px;
+    padding: 50px 40px;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    position: relative;
+}
+
+.chat__logout{
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.chat-window{
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.chat-window__form{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.chat-window__input{
+    width: 95%;
+    height: 50px;
+    margin-left: 5px;
+    border-radius: 20px;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 30px;
+    font-size: 20px;
+    outline: none;
+}
+
+.chat-window__send{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.chat-window__messages{
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+}
+
+.chat-window__message.self{
+    text-align: right;
+    align-self: flex-end;
+}
+
+.chat-window__message-text{
+    width: max-content;
+    margin-top: 5px;
+    padding: 7px 30px;
+    border-radius: 15px;
+    background-color: darkorchid;
+}
+
+.chat-window__no-chat{
+    margin: auto;
+    font-style: italic;
+    font-size: 24px;
+    color: darkgray;
+}

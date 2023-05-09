@@ -1,0 +1,35 @@
+.login{
+    width: min-content;
+    padding: 30px 150px 60px;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.1);
+}
+
+.login__input{
+    width: 250px;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.login__input:last-child{
+    margin-bottom: 0;
+}
+
+.login__title{
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.login__error{
+    align-self: flex-start;
+    color: crimson;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
